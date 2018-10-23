@@ -43,14 +43,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a onclick="microphone();" class="nav-link js-scroll-trigger" href="#users">Fanbase</a>
+              <a onclick="death();" class="nav-link js-scroll-trigger" href="#fanbase">Fanbase</a>
             </li>
             <li class="nav-item">
               <a onclick="admire();" class="nav-link js-scroll-trigger" href="#videos">Videos</a>
             </li>
             <li class="nav-item">
-              <a onclick="good();" class="nav-link js-scroll-trigger" href="#playlist">BAD AXE</a>
-            </li>           
+              <a onclick="good();" class="nav-link js-scroll-trigger" href="#badaxe">BAD AXE</a>
+            </li>  
+            <li class="nav-item">
+              <!--meter voz-->
+              <a onclick="microphone();" class="nav-link js-scroll-trigger" href="#lyrics">Lyrics</a>
+            </li>            
           </ul>
         </div>
       </div>
@@ -69,7 +73,7 @@
     </header>
 
     <!-- Utilizadores -->
-    <section id="users">
+    <section id="fanbase">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -199,8 +203,8 @@
       </div>
     </section>
 
-    <!-- Playlist -->
-    <section id="playlist">
+    <!-- BAD AXE -->
+    <section id="badaxe">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -219,6 +223,101 @@
 		          </div>  
 		         </center>                      
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lyrics -->
+    <section id="lyrics">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Draven - Someone to Execute</h2>
+            <h3 class="section-subheading text-muted">Adele</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">                         
+            
+                <center>
+              <div class="col-md-4">
+                <a class="portfolio-link" data-toggle="modal"> 
+                </a>
+                <p class="text-muted">I heard that you´re scared now<br>
+                  That you know my axe will<br>
+                  cut you down<br>
+                  <br>
+                  I heard all the cheering, I do<br>
+                  But they´re for me<br>
+                  and not for you<br>
+                  <br>
+                  My friend, you have one try<br>
+                  Try to make your escape<br>
+                  and run for your life<br>
+                  <br>
+                  I love to come here in the pódium<br>
+                  see you frightened<br>
+                  You try to go away<br>
+                  you can´t fight it<br>
+                  I hope you see my face<br>
+                  and that you´ll be reminded that for me<br>
+                  it isn´t personal<br>
+                  <br>
+                  Go to the afterlife, I´ll find somene to execute<br>
+                  I wish nothing but the best, for me<br>
+                  "Dont kill me", you begged<br>
+                  "Too easy", I said<br>
+                  Sometimes they trade, in hope<br>
+                  but those times end up the same<br>
+                  Sometimes they trade, in hope<br>
+                  but those times end up the same<br>
+                  <br>
+                  You know how the time flies<br>
+                  In these days, where Draven shines<br>
+                  He is glorious and praised<br>
+                  Everyone´s amazed bound by the surprise<br>
+                  Of his glory grace<br>
+                  <br>
+                  I love to come here in the pódium<br>
+                  see you frightened<br>
+                  You try to go away<br>
+                  you can´t fight it<br>
+                  I hope you see my face<br>
+                  and that you´ll be reminded that for me<br>
+                  it isn´t personal<br>
+                  <br>
+                  Go to the afterlife, I´ll find somene to execute<br>
+                  I wish nothing but the best, for me<br>
+                  "Dont kill me", you begged<br>
+                  "Too easy", I said<br>
+                  Sometimes they trade, in hope<br>
+                  But those times end up the same<br>                  
+                  <br>
+                  I dont care, bring assassins or tanks<br>
+                  You´ll regret your mistake<br>
+                  You won´t do again<br>
+                  You should have what, killing spree<br>
+                  By Draven taste<br>
+                  <br>
+                  Go to the afterlife, I´ll find somene to execute<br>
+                  I wish nothing but the best, for me<br>
+                  "Dont kill me", you begged<br>
+                  "Too easy", I said<br>
+                  Sometimes they trade, in hope<br>
+                  But those times end up the same<br>
+                  Sometimes they trade, in hope<br>
+                  <br>
+                  Go to the afterlife, I´ll find somene to execute<br>
+                  I wish nothing but the best, for me<br>
+                  "Dont kill me", you begged<br>
+                  "Too easy", I said<br>
+                  Sometimes they trade, in hope<br>
+                  But those times end up the same<br>
+                  Sometimes they trade, in hope<br>
+                  But those times end up the same<br>
+                </p>
+              </div>  
+             </center>                         
         </div>
       </div>
     </section>
@@ -345,6 +444,14 @@
     <script>
     function counters() {
           var sound = document.getElementById("draavenC");
+          sound.play();
+      }
+    </script>
+
+    <audio id="knock" src="img/DravenVoice/deathsKnocking.m4a" autostart="false"></audio>
+    <script>
+    function death() {
+          var sound = document.getElementById("knock");
           sound.play();
       }
     </script>

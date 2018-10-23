@@ -52,7 +52,7 @@
       
       <div class="container">
         <div class="intro-text">          
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="site.html">Here We Go</a>
+          <a onclick="go();" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="site.html">Here We Go</a>
         </div>
       </div>
     
@@ -79,6 +79,14 @@
       window.onload = func;
     </script>
 
+
+    <audio id="herewego" src="img/DravenVoice/herewego.m4a" autostart="false"></audio>
+    <script>
+    function go() {
+          var sound = document.getElementById("herewego");
+          sound.play();
+      }
+    </script>
 
      <!-- login screen -->
     <audio src="img/dravenloginscreen.mp3" loop="true" hidden="false" autostart="false" controls="false" id="song">
